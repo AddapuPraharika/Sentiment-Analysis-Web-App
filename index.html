@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SentiSphere - Real-Time Multilingual Sentiment & Emotion Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center">
+    <div class="glassmorphism p-8 rounded-xl max-w-3xl w-full shadow-lg">
+        <h1 class="text-4xl font-bold text-white mb-6 text-center">SentiSphere</h1>
+        <textarea id="inputText" rows="5" placeholder="Enter text here..." class="w-full p-4 rounded-lg mb-4 text-gray-800"></textarea>
+        <div class="flex space-x-4 mb-6">
+            <button id="sentimentBtn" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold">Analyze Sentiment</button>
+            <button id="emotionBtn" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold">Analyze Emotion</button>
+            <button id="toxicityBtn" class="flex-1 bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold">Analyze Toxicity</button>
+        </div>
+        <div id="result" class="text-white text-lg font-semibold whitespace-pre-wrap"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
